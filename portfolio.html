@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
+    
 <head>
    <meta charset="utf 8">
    <title>Portfolio*</title>
    <meta name="description" content="A free template created by Marijan Patrovski"/>
     <link rel="stylesheet" href="style.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js">
+    </script>
+<link rel="stylesheet"       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
+</script>
+
 </head>
    
 <body>
@@ -19,15 +25,17 @@
                <img src="logo.png.jpg">
            </div>
            
+           <div id="nav">
            <div class="links">
             <a href="#">HOME</a>
                &bull;
-            <a href="#">PORTFOLIO</a>
+            <a href="#por">PORTFOLIO</a>
                &bull;
-            <a href="#">ABOUT</a>
+            <a href="#abt">ABOUT</a>
                &bull;
-            <a href="#">CONTACT</a>    
+            <a href="#con">CONTACT</a>    
            </div>
+        </div>
        
        </div>
     </div>
@@ -39,7 +47,7 @@
    
     <div id="portfolio">
         <div class="centered">
-            <h1>Portfolio</h1>
+            <h1 id="por">Portfolio</h1>
             <p>
                 This shows my design work from now and throughout previous years.
             </p>
@@ -50,22 +58,22 @@
                 <a>Art Design</a>
             </p>
             <div id="gallery">
-                <div><img src="dream%20space%20section.jpg"/></div>
-                <div><img src="dream%20space%20plan.jpg"/></div>
-                <div><img src="dream%20space%20perspective.jpg"/></div>
-                <div><img src="dream%20space%20elevation.jpg"/></div>
-                <div><img src="NY%201.jpg" /></div>
-                <div><img src="NY%206.jpg" /></div>
-                <div><img src="NY%208.jpg" /></div>
-                <div><img src="NY%203.jpg" /></div>
-                <div><img src="NY%204.jpg" /></div>
-                <div><img src="NY%205.jpg" /></div>
-                <div><img src="NY%207.jpg" /></div>
-                <div><img src="NY%2011.jpg" /></div>
-                <div><img src="ARD%208.jpg" /></div>
-                <div><img src="ARD%204.jpg" /></div>
-                <div><img src="ARD%205.jpg" /></div>
-                <div><img src="ARD%207.jpg" /></div>
+                <a data-fancybox="wellington" href="dream%20space%20section%20big.png"><img src="dream%20space%20section.jpg"/></a>
+                <a data-fancybox="wellington" href="dream%20space%20plan%20big.png"><img src="dream%20space%20plan.jpg"/></a>
+                <a data-fancybox="wellington" href="dream%20space%20perspective%20big.png"><img src="dream%20space%20perspective.jpg"/></a>
+                <a data-fancybox="wellington" href="dream%20space%20elevation%20big.png"><img src="dream%20space%20elevation.jpg"/></a>
+                <a data-fancybox="wellington" href="NY%20BIG%201.jpg"><img src="NY%201.jpg" /></a>
+                <a data-fancybox="wellington" href="NY%20BIG%206.jpg"><img src="NY%206.jpg" /></a>
+                <a data-fancybox="wellington" href="NY%20BIG%208.jpg"><img src="NY%208.jpg" /></a>
+                <a data-fancybox="wellington" href="NY%20BIG%203.jpg"><img src="NY%203.jpg" /></a>
+                <a data-fancybox="wellington" href="NY%20BIG%204.jpg"><img src="NY%204.jpg" /></a>
+                <a data-fancybox="wellington" href="NY%20BIG%205.jpg"><img src="NY%205.jpg" /></a>
+                <a data-fancybox="wellington" href="NY%20BIG%207.jpg"><img src="NY%207.jpg" /></a>
+                <a data-fancybox="wellington" href="NY%20BIG%2011.jpg"><img src="NY%2011.jpg" /></a>
+                <a data-fancybox="wellington" href="ARD%20BIG%208.jpg"><img src="ARD%208.jpg" /></a>
+                <a data-fancybox="wellington" href="ARD%20BIG%204.jpg"><img src="ARD%204.jpg" /></a>
+                <a data-fancybox="wellington" href="ARD%20BIG%205.jpg"><img src="ARD%205.jpg" /></a>
+                <a data-fancybox="wellington" href="ARD%20BIG%207.jpg"><img src="ARD%207.jpg" /></a>
             </div>
         </div>
     </div>
@@ -73,7 +81,7 @@
     
         <div id="about">
         <div class="centered">
-            <h1>About Me</h1>
+            <h1 id="abt">About Me</h1>
             <h2>Angela Oliquiano</h2>
             <p>
                 I am currenetly studying in Massey University and my major is Visual Communication Design. What I love most about dsign is that I can express my ideas and communicate those ideas to other people. I got my passion for design during my highschool days, and I loved the idea of designing something that people can use and be of help to them. Because of my passion for design, I hope to gain a handful of skills to help me in my future career. 
@@ -86,7 +94,7 @@
         <div class="centered">
             <div class="container"id="contact">
                 
-            <h1>Contact Me</h1>
+            <h1 id="con">Contact Me</h1>
             <p>
                 If you have any question please feel free to contact me.
             </p>

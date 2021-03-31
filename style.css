@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+              scroll-behavior: smooth;      
+          }
+          #nav {
+              height: 25px;
+              padding-top: 25px;
+              position: center;
+              top: 0;
+          }
+          h1 {
+              /*offset to accomodate fixed nav*/
+              padding-top: 50px;
+          }
 * {
     outline: 1px dotted line;
 }
 
 @media screen and (max-width: 550px){
     body {
-       background-color:#F2F2F2 );
+       background-color: white);
     }
 }
 
