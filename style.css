@@ -8,9 +8,11 @@ html, body {
               scroll-behavior: smooth;     
           }
           #nav {
-              height: 25px;
-              padding-top: 25px;
-              position: center;
+              background-color: #EDC9AF;
+              height: 45px;
+              width: 900px;
+              padding-top: 5px;
+              position: fixed;
               top: 0;
           }
           h1 {
@@ -44,6 +46,7 @@ body {
     display: grid;
     grid-template-columns: 200px auto;
     margin-left: auto;
+    padding-top: 40px;
     margin-right: auto;
     max-width: 950px;
 }
