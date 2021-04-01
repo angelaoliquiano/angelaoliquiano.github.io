@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
-html {
-  scroll-behavior: smooth;
-}
-
 html, body {
               scroll-behavior: smooth;     
           }
@@ -11,7 +7,7 @@ html, body {
               background-color: #EDC9AF;
               height: 45px;
               width: 900px;
-              padding-top: 5px;
+              padding-top: 2px;
               position: fixed;
               top: 0;
           }
@@ -108,7 +104,7 @@ body {
     background-color: #C0998C    ;
     border-bottom: 6px solid #C0998C;
     border-top: 6px solid #FFF;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 2em;
     padding: 40px 20px;
     padding-bottom: 50px;
