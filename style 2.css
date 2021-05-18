@@ -25,12 +25,6 @@ html, body {
     }
 }
 
-@media screen and (max-width: 100px){
-    body {
-       background-color: lightgrey;
-    }
-}
-
 body {
     background-color: #F2F2F2;
     margin: 0 0 0;
@@ -77,12 +71,11 @@ body {
 }
 
 .banner {
-    background-image: url(banner%20woman.jpg);
+    background-image: url(banner woman.jpg);
     background-position: center;
-    background-size: 5.5em;
-    font-size: 10em;
-    text-align: center;
-    padding: 20px 0;
+    background-size: 150px;
+    width: 500px;
+    height: 500px;
 }
 
 .banner img {
@@ -130,6 +123,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 2em;
+    align-content: center;
     
 }
 
