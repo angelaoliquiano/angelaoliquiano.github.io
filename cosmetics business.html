@@ -8,17 +8,51 @@
    <meta name="Assignment" content="Intro to web development assignment 2"/>
     <link rel="stylesheet" href="styles.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js">
-    </script>
     <link rel="stylesheet"       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
-    </script>
 
 </head>
    <style>
        html,body {
            scroll-behavior: smooth;
        }
+       * {box-sizing: border-box}
+.skincare, .bath&body {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
     </style>
 <body>
    <div class="header">
@@ -53,114 +87,155 @@
    
     <div id="makeup">
         <div class="centered">
-            <h1 id="mak">Makeup</h1>
-            <h2>Our new line of makeup with Clinique.</h2>
-            <h3>Coming Soon...</h3>
-            
-            <section>
-                <img class="makeup" src="primer.jpg" style="width:14%">
-                <img class="makeup" src="foundation.jpg" style="width:15%">
-                <img class="makeup" src="concealer.jpg" style="width:15%">
-                <img class="makeup" src="contour%20stick.jpg" style="width:15%">
-                <img class="makeup" src="mascara.jpg" style="width:15%">
-                <img class="makeup" src="lipstick.jpg" style="width:15%">
-                <img class="makeup" src="blush.jpg" style="width:30%">
-                <img class="makeup" src="pressed%20powder.jpg" style="width:30%">
-                <img class="makeup" src="eyeshadow.jpg" style="width:40%">
-                </section>
-            </div>          
-         </div>
-    
-    <script>
-// Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("makeup");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 2000);
-}
-</script>
-    
+            <h1>Makeup</h1>
+            <h2>Our new makeup line</h2>
+            <p>
+                With our new makeupline with Clinique you are guranteed a nice natural look to make you feel flawless. 
+            </p>
+            <div id="products">
+                <div class="primer">
+                    <img src="primer.jpg" />
+                    <p>
+                        Our new primer to help matify the skin and make your skin poreless.
+                    </p>
+                </div>
+                <div class="foundation">
+                    <img src="foundation.jpg" />
+                    <p>
+                        Full coverage foundation, and get that smooth looking skin that lasts 8 hours.
+                    </p>
+                </div>
+                <div class="concealer">
+                    <img src="concealer.jpg" />
+                    <p>
+                        Our concealer product has great coverage taking away those dark circles.
+                    </p>
+                </div>
+                <div class="contour">
+                    <img src="contour%20stick.jpg" />
+                    <p>
+                        Get that sculpted look with our contour stick.
+                    </p>
+                <div class="blush">
+                    <img src="blush.jpg" />
+                    <p>
+                        This nice pink blush will give you the right red rosy cheecks.
+                    </p>
+                <div class="mascara">
+                    <img src="mascara.jpg" />
+                    <p>
+                        Get full and long volumised eyelashes with this new and improved mascara.
+                    </p>
+                <div class="lipstick">
+                    <img src="lipstick.jpg" />
+                    <p>
+                        This nice pink lipstick will give you that natural pouty lips that you desire.
+                    </p>
+                <div class="eyeshadow">
+                    <img src="eyeshadow.jpg" />
+                    <p>
+                        Nice range of nude, neutral coolours to enhance the eyes.
+                    </p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+           
     <div id="skin care">
         <div class="centered">
             <h1 id="ski">Skincare</h1>
-            <h2>Our skincare line with Clinique.</h2>
+            <h2>Our new up and coming skincare line with Clinique.</h2>
             <h3>Coming Soon...</h3>
             
-            <section>
-                <img class="skincare" src="face%20wash.jpg" style="width:20%">
-                <img class="skincare" src="toner.jpg" style="width:20%">
-                <img class="skincare" src="serum.jpg" style="width:20%">
-                <img class="skincare" src="eye%20cream.jpg" style="width:20%">
-                <img class="skincare" src="moisturiser.jpg" style="width:20%">
-                <img class="skincare" src="facial%20oil.jpg" style="width:20%">
-                <img class="skincare" src="skincare%20pack.jpg" style="width:30%">
-                <img class="skincare" src="skincare%20pack%202.jpg" style="width:30%">
-                <img class="skincare" src="skincare%20pack%203.jpg" style="width:30%">
-            </section>
-            </div>          
-         </div>
-    
-    <script>
-// Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("skincare");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 2000);
-}
-</script>
+              <div class="slideshow-container">
+                <div class="skincare">
+                <img src="face%20wash.jpg" style="width:20%">
+                </div>
+                <div class="skincare">
+                <img src="toner.jpg" style="width:20%">
+                </div>
+                <div class="skincare">
+                <img src="serum.jpg" style="width:20%">
+                </div>
+                <div class="skincare">
+                <img src="eye%20cream.jpg" style="width:20%">
+                </div>
+                <div class="skincare">
+                <img src="moisturiser.jpg" style="width:20%">
+                </div>
+                <div class="skincare">
+                <img src="facial%20oil.jpg" style="width:20%">
+                </div>
+                <div class="skincare">
+                <img src="skincare%20pack.jpg" style="width:30%">
+                </div>
+                <div class="skincare">
+                <img src="skincare%20pack%202.jpg" style="width:30%">
+                  </div>
+                <div class="skincare">
+                <img src="skincare%20pack%203.jpg" style="width:30%">  
+                </div>
+                    
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
             
     <div id="bath & body">
         <div class="centered">
             <h1 id="bat">Bath & Body</h1>
-            <h2>Our bath & body collection</h2>
+            <h2>Our new up and coming bath & body collection</h2>
             <h3>Coming Soon...</h3>
-            <section>
-                <img class="bath&body" src="body%20wash.jpg" style="width:14%">
-                <img class="bath&body" src="body%20lotion.jpg" style="width:15%">
-                <img class="bath&body" src="body%20butter.jpg" style="width:15%">
-                <img class="bath&body" src="deoderant.jpg" style="width:15%">
-                <img class="bath&body" src="perfume%20pack.jpg" style="width:15%">
-                <img class="bath&body" src="perfume.jpg" style="width:15%">
-                </section>
-            </div>          
-         </div>
-    
-    <script>
-        
-// Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
+            
+            <div class="slideshow-container">
+                <div class="bath&body">
+                <img src="body%20wash.jpg" style="width:25%">
+                </div>
+                <div class="bath&body">
+                <img src="body%20lotion.jpg" style="width:15%">
+                </div> 
+                <div class="bath&body">   
+                <img src="body%20butter.jpg" style="width:15%">
+                </div> 
+                <div class="bath&body">   
+                <img src="deoderant.jpg" style="width:15%">
+                </div>
+                <div class="bath&body">   
+                <img src="perfume%20pack.jpg" style="width:15%">
+                </div>
+                <div class="bath&body">   
+                <img src="perfume.jpg" style="width:15%">
+                </div>
+                
+           <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+             
+            <script>
+            var slideIndex = [1,1];
+var slideId = ["skincare", "bath&body"]
+showSlides(1, 0);
+showSlides(1, 1);
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("bath&body");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 2000);
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
 }
-</script>
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>            
+        </div>
     
         <div id="about">
         <div class="centered">
@@ -175,8 +250,10 @@ function carousel() {
             </p>
             
             <div id="profiles">
+                
                 <img src="clinique brand.jpg">
                 <img src="barebeauty cosmetics brand.jpg">
+                </div>
             </div>
             
             </div>
@@ -210,14 +287,15 @@ function carousel() {
     <div id="footer">
         <div class="centered">
             <div>
-               
+              <p>
+                  &copy; Copyright 2021 &bull; BareBeauty Cosmetics
+                </p> 
             </div>
             <div class="social">
                 
             </div>
         </div>
     </div>
-        
     
 </body>    
    
