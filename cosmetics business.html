@@ -7,8 +7,13 @@
    <title>BareBeauty Cosmetics*</title>
    <meta name="Assignment" content="Intro to web development assignment 2"/>
     <link rel="stylesheet" href="styles.css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
 
 </head>
    <style>
@@ -34,7 +39,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: dimgrey;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -50,9 +55,10 @@ img {vertical-align: middle;}
 
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  background-color: #f1f1f1;
+  background-color: grey;
   color: black;
 }
+      
     </style>
 <body>
    <div class="header">
@@ -71,8 +77,6 @@ img {vertical-align: middle;}
                &bull;
             <a href="#ski">SKIN CARE</a>
                &bull;
-            <a href="#bat">BATH & BODY</a>
-               &bull;
             <a href="#abt">ABOUT US</a>
                &bull;
             <a href="#con">CONTACT</a>    
@@ -87,64 +91,70 @@ img {vertical-align: middle;}
    
     <div id="makeup">
         <div class="centered">
-            <h1>Makeup</h1>
+            <h1 id="mak">Makeup</h1>
             <h2>Our new makeup line</h2>
             <p>
                 With our new makeupline with Clinique you are guranteed a nice natural look to make you feel flawless. 
             </p>
-            <div id="products">
+            <div id="gallery">
                 <div class="primer">
-                    <img src="primer.jpg" />
+                    <a data-fancybox="wellington" href="big%20primer.jpg"><img src="primer.jpg" /></a>
                     <p>
                         Our new primer to help matify the skin and make your skin poreless.
                     </p>
                 </div>
                 <div class="foundation">
-                    <img src="foundation.jpg" />
+                    <a data-fancybox="wellington" href="Big%20foundation.jpg"><img src="foundation.jpg" /></a>
                     <p>
-                        Full coverage foundation, and get that smooth looking skin that lasts 8 hours.
+                        Full coverage foundation, that lasts 8 hours.
                     </p>
                 </div>
                 <div class="concealer">
-                    <img src="concealer.jpg" />
+                    <a data-fancybox="wellington" href="Big%20concealer.jpg"><img src="concealer.jpg" /></a>
                     <p>
                         Our concealer product has great coverage taking away those dark circles.
                     </p>
                 </div>
+                <div class="pressed powder">
+                    <a data-fancybox="wellington" href="Big%20pressed%20powder.jpg"><img src="pressed%20powder.jpg" /></a>
+                    <p>
+                        This presed powder will help set your makeup and last longer. 
+                    </p>
+                </div>
                 <div class="contour">
-                    <img src="contour%20stick.jpg" />
+                    <a data-fancybox="wellington" href="Big%20contour%20stick.jpg"><img src="contour%20stick.jpg" /></a>
                     <p>
                         Get that sculpted look with our contour stick.
                     </p>
+                </div>
                 <div class="blush">
-                    <img src="blush.jpg" />
+                    <a data-fancybox="wellington" href="Big%20blush.jpg"><img src="blush.jpg" /></a>
                     <p>
                         This nice pink blush will give you the right red rosy cheecks.
                     </p>
+                </div>
                 <div class="mascara">
-                    <img src="mascara.jpg" />
+                    <a data-fancybox="wellington" href="Big%20mascara.jpg"><img src="mascara.jpg" /></a>
                     <p>
-                        Get full and long volumised eyelashes with this new and improved mascara.
+                        Get full and long volumised eyelashes with new and improved mascara.
                     </p>
+                </div>
                 <div class="lipstick">
-                    <img src="lipstick.jpg" />
+                    <a data-fancybox="wellington" href="Big%20lipstick.jpg"><img src="lipstick.jpg" /></a>
                     <p>
                         This nice pink lipstick will give you that natural pouty lips that you desire.
                     </p>
+                </div>
                 <div class="eyeshadow">
-                    <img src="eyeshadow.jpg" />
+                    <a data-fancybox="wellington" href="Big%20eyeshadow.jpg"><img src="eyeshadow.jpg" /></a>
                     <p>
                         Nice range of nude, neutral coolours to enhance the eyes.
                     </p>
+                    </div>
                 </div>
                 </div>
                 </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-           
+
     <div id="skin care">
         <div class="centered">
             <h1 id="ski">Skincare</h1>
@@ -153,86 +163,65 @@ img {vertical-align: middle;}
             
               <div class="slideshow-container">
                 <div class="skincare">
-                <img src="face%20wash.jpg" style="width:20%">
+                <img src="face%20wash.jpg" style="width:100%">
                 </div>
                 <div class="skincare">
-                <img src="toner.jpg" style="width:20%">
+                <img src="toner.jpg" style="width:100%">
                 </div>
                 <div class="skincare">
-                <img src="serum.jpg" style="width:20%">
+                <img src="serum.jpg" style="width:100%">
                 </div>
                 <div class="skincare">
-                <img src="eye%20cream.jpg" style="width:20%">
+                <img src="eye%20cream.jpg" style="width:100%">
                 </div>
                 <div class="skincare">
-                <img src="moisturiser.jpg" style="width:20%">
+                <img src="moisturiser.jpg" style="width:100%">
                 </div>
                 <div class="skincare">
-                <img src="facial%20oil.jpg" style="width:20%">
+                <img src="facial%20oil.jpg" style="width:100%">
                 </div>
                 <div class="skincare">
-                <img src="skincare%20pack.jpg" style="width:30%">
+                <img src="skincare%20pack.jpg" style="width:100%">
                 </div>
                 <div class="skincare">
-                <img src="skincare%20pack%202.jpg" style="width:30%">
+                <img src="skincare%20pack%202.jpg" style="width:100%">
                   </div>
                 <div class="skincare">
-                <img src="skincare%20pack%203.jpg" style="width:30%">  
+                <img src="skincare%20pack%203.jpg" style="width:100%">  
                 </div>
                     
             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
-            
-    <div id="bath & body">
-        <div class="centered">
-            <h1 id="bat">Bath & Body</h1>
-            <h2>Our new up and coming bath & body collection</h2>
-            <h3>Coming Soon...</h3>
-            
-            <div class="slideshow-container">
-                <div class="bath&body">
-                <img src="body%20wash.jpg" style="width:25%">
-                </div>
-                <div class="bath&body">
-                <img src="body%20lotion.jpg" style="width:15%">
-                </div> 
-                <div class="bath&body">   
-                <img src="body%20butter.jpg" style="width:15%">
-                </div> 
-                <div class="bath&body">   
-                <img src="deoderant.jpg" style="width:15%">
-                </div>
-                <div class="bath&body">   
-                <img src="perfume%20pack.jpg" style="width:15%">
-                </div>
-                <div class="bath&body">   
-                <img src="perfume.jpg" style="width:15%">
-                </div>
-                
-           <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-           <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-            </div>
              
             <script>
-            var slideIndex = [1,1];
-var slideId = ["skincare", "bath&body"]
-showSlides(1, 0);
-showSlides(1, 1);
+            var slideIndex = 1;
+showSlides(slideIndex);
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function showSlides(n, no) {
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
   var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+  var slides = document.getElementsByClassName("skincare");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-  x[slideIndex[no]-1].style.display = "block";  
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
 </script>            
         </div>
@@ -277,7 +266,7 @@ function showSlides(n, no) {
         <p>
             Social: @angelaoliquiano (instagram)<br />
             Tel: 4555 824 24 25<br />
-            Email: angela@gmail.com
+            Email: angela@barebeauty.cosmetics.com
         </p>
     </form>
             </div>
